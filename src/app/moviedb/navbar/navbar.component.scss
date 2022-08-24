@@ -1,0 +1,54 @@
+// $bg:#09c;
+$bgColor:#181d29;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186,239,.6);
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap');
+
+.navcustom{
+    background-color:$bgColor ;
+    color:$fontColor ;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a{
+    color:$fontColor ;
+}
+
+.nav-item a:hover {
+    color: tan !important;
+}
+
+.nav-item a:active {
+    color: tan !important;
+}
+
+
+.navbar-nav {
+    --bs-nav-link-hover-color:tan !important
+}
+
+.nav-link.active {
+    color: tan; 
+}
+
+#nava{
+    background-color: $bgColor;
+}
+
+.icons i:hover {
+    color: tan !important;
+}
+.log a:hover {
+    color: tan !important;
+}
+.log a {
+    cursor: pointer;
+}
+
+.icons i {
+    cursor: pointer;
+}

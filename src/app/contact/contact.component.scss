@@ -1,0 +1,29 @@
+p ,i{
+    color: gray;
+}
+
+i{
+    background-color: white;
+    border: 0.7px gray solid;
+    border-radius: 40px;
+
+}
+
+i:hover{
+    background-color: gray;
+    color: white;
+}
+
+h5{
+    color: gray;
+    font-weight: 300;
+}
+
+a{
+    color: gray;
+}
+
+a:hover i{
+    background-color: gray;
+    color: white;
+}

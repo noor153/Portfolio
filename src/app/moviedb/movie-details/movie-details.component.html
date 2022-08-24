@@ -1,0 +1,35 @@
+<div class="container py-5">
+    <div class="row mx-auto">
+       <div class="col-md-12">
+        <div class="row">
+            <div class="col-xl-4">
+                <img [src]="imgPrefix +mD.poster_path" [title]="mD.title" [alt]="mD.title" class="img-fluid">
+            </div>
+            <div class="col-xl-6">
+                    <h3 class="mb-3">{{mD.title}}</h3>
+                    <p>{{mD.tagline}}</p>
+    
+                    <div class="parent d-flex my-4">
+                        <div class="child rounded p-1 me-3" *ngFor="let cat of mD.genres" >
+                            {{cat.name}}
+                        </div>
+                    </div>
+    
+                    <h6 class="my-3">Vote : {{mD.vote_average.toFixed(1)}}</h6>
+                    <h6 class="my-3">Vote Count : {{mD.vote_count}}</h6>
+                    <h6 class="my-3">Popularity : {{mD.popularity.toFixed(1)}}</h6>
+                    <h6 class="my-3">Release Date : {{mD.release_date}}</h6>
+                    <h6 class="my-3">Language : {{mD.original_language}}</h6>
+                    <h6 class="my-3">Status :  {{mD.status}}</h6>
+                    <h6 class="my-3">Duration : {{mD.runtime}} min</h6>
+                    <p class="py-3">{{mD.overview}}</p>
+                    <div class="text-end">
+                        <a [href]="mD.homepage" target="_blank"><button class="btn"> Visit Home Page</button></a>
+                    </div>
+            </div>
+        </div>
+
+       </div>
+
+    </div>
+</div>

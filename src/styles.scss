@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+$bgColor:#131722;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186,239,.6);
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+.bag{
+    background-color: $bgColor;
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background-color: $bgColor;
+    // color: $fontColor;
+    // @media screen and (max-width:300px) {
+    //     font-size: 10px;
+    // }
+}
+
+
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    border: none !important;
+    margin: 0px !important;
+    padding: 0 !important;
+}
+
+.bttn1{
+    background-image: linear-gradient(to right, rgba(236, 132, 77, 1) 0%,rgba(235, 100, 86, 1) 35%, rgba(235, 83, 90, 1) 51%,rgba(235, 83, 90, 1) 100%);
+    color: white;
+    /* border: 1px solid white; */
+    padding-right: 20px  ;
+    padding-left: 20px  ;
+}
+
+.btn:hover{
+color: white !important;
+}
+
+
+.hh{
+    
+    font-size: 4vw !important;
+
+}
+
+/* 
+@media screen and (min-width: 601px) {
+     {
+      font-size: 380px;
+    }
+  } */
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .hh {
+        font-size: 7vw !important;
+    }
+  }

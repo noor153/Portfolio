@@ -1,0 +1,18 @@
+#third{
+    background-color: #10144F;
+}
+
+img{
+    width: 100%;
+}
+
+
+.size{
+    width: 65%;
+}
+
+@media screen and (max-width: 600px) {
+    .size{
+        width: 100%;
+    }
+}

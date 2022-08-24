@@ -1,0 +1,17 @@
+
+.child:hover{
+    transform: scale(1.25);
+}
+
+.child{
+    transition: all 0.8s ;
+}
+
+p,i{
+    color: gray;
+}
+
+#portfolio{
+    background-color: #e6e6e6;
+
+}

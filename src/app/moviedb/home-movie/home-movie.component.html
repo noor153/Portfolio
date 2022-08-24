@@ -1,0 +1,87 @@
+<div id="id" class="bag">
+
+    <div class="name d-flex pt-3" *ngIf="fn">
+        Hello : {{fn}}
+    </div>
+    
+    <div class="container">
+        <div class="row py-5">
+    
+            <div class="col-md-6 position-relative d-flex align-items-center col-xl-4 col-10 col-sm-8 mx-auto">
+                <div class="child">
+                    <h2>Trending movies <br> to watch Right now</h2>
+                    <p>most watched Movies By days</p>
+                </div>
+
+            </div>
+            <div *ngFor="let movie of trendingMovies" class="col-md-3 col-xl-2 col-sm-4 col-5 mx-auto">
+
+                <div class="movie position-relative " [routerLink]='["../movieDetails",movie.id]'> 
+
+                        <img [src]="imgPrefix + movie.poster_path" [alt]="movie.title" class="img-fluid">
+                        <h3 class="h5 my-2">{{movie.title}}</h3>
+                        <div class="vote">
+                            {{movie.vote_average.toFixed(1)}}
+                        </div>
+
+                </div>
+
+
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-5">
+    
+            <div class="col-md-6 position-relative d-flex align-items-center col-xl-4 col-10 col-sm-8 mx-auto">
+                <div class="child">
+                    <h2>Trending Tv <br> to watch Right now</h2>
+                    <p>most watched Tv By days</p>
+                </div>
+
+            </div>
+            <div  *ngFor="let tv of trendingTv" class="col-md-3 col-xl-2 col-sm-4 col-5 mx-auto">
+                <div class="tv position-relative " >
+                    <img [src]="imgPrefix + tv.poster_path" [alt]="tv.name" class="img-fluid">
+                    <h3 class="h5 my-2">{{tv.name}}</h3>
+                    <div class="vote">
+
+                        {{tv.vote_average.toFixed(1)}}
+    
+                    </div>
+                </div>
+
+
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-5">
+    
+            <div class="col-md-6 position-relative d-flex align-items-center col-xl-4 col-10 col-sm-8 mx-auto col-my-5">
+                <div class="child">
+                    <h2>Trending Person <br> to watch Right now</h2>
+                    <p>most watched Person By days</p>
+                </div>
+
+            </div>
+            <div  *ngFor="let Person of trendingPersons"  class="col-md-3 col-xl-2 col-sm-4 col-5 mx-auto">
+                <div class="Person position-relative" >
+                    <img [src]="imgPrefix + Person.profile_path" [alt]="Person.original_name" class="img-fluid">
+                    <h3 class="h5 my-2">{{Person.original_name}}</h3>
+                </div>
+
+
+            </div>
+    
+        </div>
+    </div>
+
+
+</div>
+
+<!-- hello -->

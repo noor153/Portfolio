@@ -1,0 +1,33 @@
+.icon1{
+    background-color: rgb(225, 235, 255);
+    color: rgb(61, 76, 153);
+
+    border-radius: 50px;
+}
+
+.icon2{
+    background-color: rgb(223, 253, 233);
+    color: rgb(79, 129, 98);
+
+    border-radius: 50px;
+}
+
+.icon3{
+    background-color: rgb(253, 238, 225);
+    color: rgb(196, 122, 60);
+
+    border-radius: 50px;
+}
+.child{
+transition: all 0.5s;
+box-sizing: border-box;
+padding: 10px;
+}
+
+.child:hover{
+    background-color: white;
+}
+
+p{
+    color: gray;
+}

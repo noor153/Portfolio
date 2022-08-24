@@ -1,0 +1,34 @@
+<div id="login " class="bag py-5">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-10 col-md-8 col-xl-6 mx-auto p-5">
+
+            <div class="bg-danger danger">
+    {{errorServer}}
+            </div>
+
+                <div class="pt-4">
+                    <h3>Login Form</h3>
+                </div>
+                <form [formGroup]="loginForm" class="py-4" (ngSubmit)="onLoginSubmit(loginForm)" >
+                    <div class="mb-4">
+                        <label for="exampleInputEmail1" class="form-label">email address:</label>
+                        <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="" class="text-danger mt-2" *ngIf="loginForm.get('email')?.errors?.required && loginForm.get('email')?.touched">email is Required</label>
+                        <label for="" class="text-danger mt-2" *ngIf="loginForm.get('email')?.errors?.email">email Should Be A Real one </label>
+                      </div>
+                      <div class="mb-4">
+                        <label for="exampleInputPassword1" class="form-label">Password:</label>
+                        <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+                        <label for="" class="text-danger mt-2" *ngIf="loginForm.get('password')?.errors?.required && loginForm.get('password')?.touched">password is Required</label>
+                        <label for="" class="text-danger mt-2" *ngIf="loginForm.get('password')?.errors?.pattern">password Should Be from 8 to 20 Character, Starts With An UpperCase</label>
+                      </div>
+                    <div class="foot d-flex justify-content-between align-items-baseline">
+                        <p>dont have account ? <a routerLink="../register" class="text-decoration-none col-12 col-xl-7">register</a> </p>
+                        <button type="submit" [disabled]="!loginForm.valid " class="btn col-12 col-xl-3">login</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

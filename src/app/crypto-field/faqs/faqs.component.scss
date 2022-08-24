@@ -1,0 +1,29 @@
+#faqs{
+    background-color: #080C49;
+}
+
+
+.bt{
+    background-color: tomato;
+}
+
+
+.left{
+    box-sizing: border-box;
+}
+
+.back{
+    background-color: #10144F;
+}
+
+.x{
+    display: flex;
+}
+
+@media screen and (max-width:400px) {
+
+    .x{
+        display: block;
+    }
+    
+}

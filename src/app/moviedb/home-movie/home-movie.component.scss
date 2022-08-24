@@ -1,0 +1,40 @@
+$bgColor:#131722;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186,239,.6);
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap');
+
+.vote{
+    position: absolute;
+    background-color:$lightBgColor ;
+    top: 0;
+    padding: 5px;
+    right: 0.5rem;
+
+}
+
+.child::after{
+    content: "";
+    width: 75%;
+    position: absolute;
+    bottom: 30%;
+    height: 0.1rem;
+    background-color: $secondFontColor;
+
+}
+
+.child::before{
+    content: "";
+    width: 25%;
+    position: absolute;
+    top: 25%;
+    height: 0.1rem;
+    background-color: $secondFontColor;
+}
+
+.movie{
+    cursor:pointer
+}

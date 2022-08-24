@@ -1,0 +1,17 @@
+$lightBgColor:#24baef;
+
+a {
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+    color: tan !important;
+}
+
+button{
+color: white;
+background-color: $lightBgColor;
+}
+
+

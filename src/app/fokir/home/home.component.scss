@@ -1,0 +1,66 @@
+#home
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../assets/slider-01.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#home .logo
+{
+ color: #ff305b;
+}
+
+
+
+.nava{
+    // background-color: #333333 ;
+    background-color: transparent;
+
+}
+
+
+
+.nav-link.active {
+    color: #ff305b !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-item:hover a
+{
+    color: #ff305b !important;
+} 
+
+.home-text
+{
+    color: white;
+    margin-top: 16rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.home-text h1
+{
+    color: #ff305b;  
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.home-text h3
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+
+.home-text h4
+{
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31px;
+}

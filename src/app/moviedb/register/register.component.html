@@ -1,0 +1,54 @@
+<div id="register " class="bag py-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-6 mx-auto ">
+                <div class="bg-danger danger">
+                    {{error}}
+                </div>
+                <div class="py-4">
+                    <h3>registeration Form</h3>
+                </div>
+                <form [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit(registerForm)">
+                    <div class="mb-4">
+                        <label for="fn" class="form-label">First Name:</label>
+                        <input formControlName="first_name" type="text" class="form-control" id="fn">
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('first_name')?.errors?.required && registerForm.get('first_name')?.touched">First Name is Required</label>
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('first_name')?.errors?.minlength">First Name Minimum length is 3 </label>
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('first_name')?.errors?.maxlength">First Name Maximum length is 50 </label>
+                    </div>
+                    <div class="mb-4">
+                        <label for="ln" class="form-label">Last Name:</label>
+                        <input type="text" formControlName="last_name" class="form-control" id="ln">
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('last_name')?.errors?.required && registerForm.get('last_name')?.touched">Last Name is Required</label>
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('last_name')?.errors?.minlength">Last Name Minimum length is 3 </label>
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('last_name')?.errors?.maxlength">Last Name Maximum length is 50 </label>
+
+                    </div>
+                    <div class="mb-4">
+                        <label for="age" class="form-label">Age:</label>
+                        <input type="number" formControlName="age" class="form-control" id="age">
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('age')?.errors?.required && registerForm.get('age')?.touched">age is Required</label>
+                        <label for="" class="text-danger mt-2" *ngIf="registerForm.get('age')?.errors?.min">Age Should Be +12 </label>
+
+
+                    </div>                
+                    <div class="mb-4">
+                      <label for="exampleInputEmail1" class="form-label">email address:</label>
+                      <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="" class="text-danger mt-2" *ngIf="registerForm.get('email')?.errors?.required && registerForm.get('email')?.touched">email is Required</label>
+                      <label for="" class="text-danger mt-2" *ngIf="registerForm.get('email')?.errors?.email">email Should Be A Real one </label>
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleInputPassword1" class="form-label">Password:</label>
+                      <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+                      <label for="" class="text-danger mt-2" *ngIf="registerForm.get('password')?.errors?.required && registerForm.get('password')?.touched">password is Required</label>
+                      <label for="" class="text-danger mt-2" *ngIf="registerForm.get('password')?.errors?.pattern">password Should Be from 8 to 20 Character, Starts With An UpperCase</label>
+                    </div>
+                    <div class="foot d-flex justify-content-end">
+                        <button type="submit" [disabled]="!registerForm?.valid" class="btn">register</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

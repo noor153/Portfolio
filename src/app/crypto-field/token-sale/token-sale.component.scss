@@ -1,0 +1,64 @@
+#token{
+    background-color: #080C49;
+}
+
+.item{
+    box-sizing: border-box;
+    padding: 3vh;
+    background-color: #10144F;
+    border-radius: 13px;
+    border: #080C49 solid 10px;
+    
+}
+
+.right{
+    background-image: url("../../../assets/01 2.png");
+    background-position: 20% 20% ;
+    background-size: cover;
+}
+
+.progressBar{
+    height: 20px;
+    margin: auto;
+    margin-top: 12px;
+    width: 100%; 
+}
+
+
+
+.progress-bar{
+    background-color: #EC5B59;
+}
+
+img{
+    width: 100%;
+}
+
+i{
+    font-size: 46px;
+
+}
+
+.tab{
+    tab-size:8;
+    margin-top: 30px;
+
+}
+
+.x{
+    --bs-gutter-x: 0rem !important;
+}
+
+@media screen and (max-width:400px) {
+    .item{
+        box-sizing: border-box;
+        height: 160px;
+        background-color: #10144F;
+        border-radius: 13px;
+        border: #080C49 solid 10px;
+        padding-top: 25px;
+
+
+        
+    }
+}
