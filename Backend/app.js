@@ -10,7 +10,7 @@ app.use(express.json())
 connection()
 
 
-app.use(express.static('../dist/portfolio'));
+app.use(express.static('./dist/portfolio'));
 
 
 
